@@ -28,6 +28,10 @@
  */
 function filterNegativeNumbers(numbers) {
   // Your implementation here
+
+  const filteredArray = numbers.filter((num) => num >= 0);
+
+  return filteredArray;
 }
 
 /**
@@ -47,6 +51,10 @@ function filterNegativeNumbers(numbers) {
  */
 function doubleDivisibleByThree(numbers) {
   // Your implementation here
+  const numsDivByThree = numbers.filter((num) => num % 3 === 0);
+  const numsDoubled = numsDivByThree.map((num) => num * 2);
+
+  return numsDoubled;
 }
 
 /**
@@ -76,6 +84,7 @@ function doubleDivisibleByThree(numbers) {
  */
 function selectHighPerformingStudents(students) {
   // Your implementation here
+  
 }
 
 /**
