@@ -57,29 +57,29 @@ function doubleDivisibleByThree(numbers) {
   return numsDoubled;
 }
 
-const studentRecords = [
-  { id: 1,  name: "Bob",      email: "bob@uni.edu",      GPA: 4, hobbies: ["basketball", "coding"] },
-  { id: 2,  name: "Lisa",     email: "lisa@uni.edu",     GPA: 4, hobbies: ["ballet", "ballroom"] },
-  { id: 3,  name: "Harry",    email: "harry@uni.edu",    GPA: 6, hobbies: ["shooting", "metalwork"] },
-  { id: 4,  name: "Gwen",     email: "gwen@uni.edu",     GPA: 5, hobbies: ["coding", "writing"] },
-  { id: 5,  name: "Cudro",    email: "cudro@uni.edu",    GPA: 4, hobbies: ["piano", "baseball"] },
-  { id: 6,  name: "Ben",      email: "ben@uni.edu",      GPA: 4, hobbies: ["flute", "recording"] },
-  { id: 7,  name: "Harriot",  email: "harriot@uni.edu",  GPA: 2, hobbies: ["karate", "jiu jitsu"] },
-  { id: 8,  name: "Gray",     email: "gray@uni.edu",     GPA: 1, hobbies: ["tennis", "nrl football"] },
-  { id: 9,  name: "Maloney",  email: "maloney@uni.edu",  GPA: 4, hobbies: ["coding", "chess"] },
-  { id: 10, name: "Glen",     email: "glen@uni.edu",     GPA: 3, hobbies: ["trivia", "gardening"] },
-  { id: 11, name: "Amit",     email: "amit@uni.edu",     GPA: 4, hobbies: ["game design", "warhammer"] },
-  { id: 12, name: "Jesus",    email: "jesus@uni.edu",    GPA: 4, hobbies: ["board games", "pet sitting"] },
-  { id: 13, name: "Alluh",    email: "alluh@uni.edu",    GPA: 4, hobbies: ["genealogy", "coding"] },
-  { id: 14, name: "Mohammad", email: "mohammad@uni.edu", GPA: 6, hobbies: ["painting acrylics", "coding"] },
-  { id: 15, name: "Radika",   email: "radika@uni.edu",   GPA: 7, hobbies: ["running", "ice skating"] },
-  { id: 16, name: "Suki",     email: "suki@uni.edu",     GPA: 4, hobbies: ["poetry", "photography"] },
-  { id: 17, name: "Trevor",   email: "trevor@uni.edu",   GPA: 4, hobbies: ["acting", "dancing"] },
-  { id: 18, name: "Janice",   email: "janice@uni.edu",   GPA: 7, hobbies: ["dancing", "singing"] },
-  { id: 19, name: "Chris",    email: "christine@uni.edu",GPA: 5, hobbies: ["drawing", "pottery"] },
-  { id: 20, name: "Jess",     email: "jess@uni.edu",     GPA: 5, hobbies: ["puzzles", "soduku"] },
-  { id: 21, name: "Hanson",   email: "hanson@uni.edu",   GPA: 1, hobbies: ["seashell collecting", "action figure collecting"] },
-]
+// const studentRecords = [
+//   { id: 1,  name: "Bob",      email: "bob@uni.edu",      GPA: 4, hobbies: ["basketball", "coding"] },
+//   { id: 2,  name: "Lisa",     email: "lisa@uni.edu",     GPA: 4, hobbies: ["ballet", "ballroom"] },
+//   { id: 3,  name: "Harry",    email: "harry@uni.edu",    GPA: 6, hobbies: ["shooting", "metalwork"] },
+//   { id: 4,  name: "Gwen",     email: "gwen@uni.edu",     GPA: 5, hobbies: ["coding", "writing"] },
+//   { id: 5,  name: "Cudro",    email: "cudro@uni.edu",    GPA: 4, hobbies: ["piano", "baseball"] },
+//   { id: 6,  name: "Ben",      email: "ben@uni.edu",      GPA: 4, hobbies: ["flute", "recording"] },
+//   { id: 7,  name: "Harriot",  email: "harriot@uni.edu",  GPA: 2, hobbies: ["karate", "jiu jitsu"] },
+//   { id: 8,  name: "Gray",     email: "gray@uni.edu",     GPA: 1, hobbies: ["tennis", "nrl football"] },
+//   { id: 9,  name: "Maloney",  email: "maloney@uni.edu",  GPA: 4, hobbies: ["coding", "chess"] },
+//   { id: 10, name: "Glen",     email: "glen@uni.edu",     GPA: 3, hobbies: ["trivia", "gardening"] },
+//   { id: 11, name: "Amit",     email: "amit@uni.edu",     GPA: 4, hobbies: ["game design", "warhammer"] },
+//   { id: 12, name: "Jesus",    email: "jesus@uni.edu",    GPA: 4, hobbies: ["board games", "pet sitting"] },
+//   { id: 13, name: "Alluh",    email: "alluh@uni.edu",    GPA: 4, hobbies: ["genealogy", "coding"] },
+//   { id: 14, name: "Mohammad", email: "mohammad@uni.edu", GPA: 6, hobbies: ["painting acrylics", "coding"] },
+//   { id: 15, name: "Radika",   email: "radika@uni.edu",   GPA: 7, hobbies: ["running", "ice skating"] },
+//   { id: 16, name: "Suki",     email: "suki@uni.edu",     GPA: 4, hobbies: ["poetry", "photography"] },
+//   { id: 17, name: "Trevor",   email: "trevor@uni.edu",   GPA: 4, hobbies: ["acting", "dancing"] },
+//   { id: 18, name: "Janice",   email: "janice@uni.edu",   GPA: 7, hobbies: ["dancing", "singing"] },
+//   { id: 19, name: "Chris",    email: "christine@uni.edu",GPA: 5, hobbies: ["drawing", "pottery"] },
+//   { id: 20, name: "Jess",     email: "jess@uni.edu",     GPA: 5, hobbies: ["puzzles", "soduku"] },
+//   { id: 21, name: "Hanson",   email: "hanson@uni.edu",   GPA: 1, hobbies: ["seashell collecting", "action figure collecting"] },
+// ]
 
 /**
  * Exercise 3: Selecting High-Performing Students with a Specific Hobby
@@ -116,7 +116,7 @@ function selectHighPerformingStudents(students) {
   return sortedStudents;
 }
 
-console.log(selectHighPerformingStudents(studentRecords));
+// console.log(selectHighPerformingStudents(studentRecords));
 
 /**
  * Exercise 4: Aggregating Student Data with `reduce()`
@@ -158,7 +158,7 @@ function aggregateStudentData(students) {
   }
 }
 
-console.log(aggregateStudentData(studentRecords));
+// console.log(aggregateStudentData(studentRecords));
 
 /**
  * Exercise 5: Swapping Between Sentence and CamelCase Forms
