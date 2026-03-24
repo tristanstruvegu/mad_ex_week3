@@ -84,7 +84,12 @@ function doubleDivisibleByThree(numbers) {
  */
 function selectHighPerformingStudents(students) {
   // Your implementation here
-  
+  const filteredStudentsByGPA = students.filter((student) => student.GPA >= 5);
+  const filteredStudentsByHobby = filteredStudentsByGPA.filter((student) => student.hobbies.includes("coding"));
+  const transformedStudents = filteredStudentsByHobby.map((student) => { return { name: student.name, email: student.email }});
+  const sortedStudents = transformedStudents.sort((a, b) => (a.name > b.name ? 1 : -1));
+
+  return sortedStudents;
 }
 
 /**
