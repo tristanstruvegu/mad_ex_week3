@@ -181,6 +181,21 @@ function aggregateStudentData(students) {
  */
 function swapForm(input) {
   // Your implementation here
+  if (input.includes(" ")) {
+    const words = input
+    .split(" ")
+    .map((word, i) => (i > 0 ? word[0].toUpperCase() + word.slice(1) : word));
+
+    const camelString = words.join("");
+    return camelString;
+  } 
+  
+  const words = input
+    .split("")
+    .map((word) => (word.toUpperCase() === word ? " " + word.toLowerCase() : word));
+
+  const sentanceString = words.join("");
+  return sentanceString;
 }
 
 // Export the function for testing with Jest
