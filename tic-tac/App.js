@@ -1,68 +1,20 @@
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Home from "./src/screens/Home";
+import Credits from "./src/screens/Credits";
+import Rules from "./src/screens/Rules";
 
-const plays = ["O", "", "X", "X", "", "O", "", "X", ""];
-
-const Cell = ({ play }) => {
+const Stack = createStackNavigator();
+const App = () => {
   return (
-    <View style={styles.box}>
-      <Text style={styles.text}>{play}</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Credits" component={Credits} />
+        <Stack.Screen name="Rules" component={Rules} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.table}>
-        <View style={styles.board}>
-          {plays.map((p, i) => (
-            <Cell key={i} play={p} />
-          ))}
-        </View>
-      </View>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    // alignItems: "center",
-    justifyContent: "center",
-  },
-  table: {
-    flex: 1,
-    backgroundColor: "#ccc",
-    justifyContent: "center",
-    alignItems: "center",
-    margin: 10,
-  },
-  board: {
-    width: 300,
-    height: 300,
-    borderWidth: 2,
-    borderColor: "black",
-    borderRadius: 10,
-    backgroundColor: "orange",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    paddingTop: 30,
-    // alignItems: "center",
-  },
-  box: {
-    width: 80,
-    height: 80,
-    borderWidth: 1,
-    borderColor: "black",
-    backgroundColor: "#090",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    fontSize: 30,
-    fontWeight: "bold",
-    color: "white",
-  },
-});
+export default App;
